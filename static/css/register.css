@@ -1,0 +1,25 @@
+.registerform{
+    margin: 0px auto;
+    width: 40%;
+    padding: 20px 4%;
+}
+
+.form-control {
+  margin:-10px 0; // form top and bottom margin
+ }
+
+
+button{
+    width: 100%
+}
+
+.submitbtn{
+    width: 100%;
+    background-color: #38c9d6;
+    color: #fff;
+}
+
+.submitbtn:hover{
+    color: #fff;
+    background: #49B6C1;
+}
