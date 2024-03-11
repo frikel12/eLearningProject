@@ -75,6 +75,9 @@
     border-radius: 0px;
 }
 
+#profil{
+    margin-right: 10px;
+}
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {

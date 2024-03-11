@@ -59,10 +59,16 @@
                 <a href="{{ url_for('team') }}" class="nav-item nav-link">Our Team</a>
                 <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
             </div>
-            <a href="{{ url_for('login') }}" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block">Login</a>
-            <a href="{{ url_for('register') }}" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block" style="background-color: #fff;color:#38c9d6;border:#fff">Register</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block nav-link dropdown-toggle" data-bs-toggle="dropdown">Join Now</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ url_for('login') }}" class="dropdown-item">Login</a>
+                    <a href="{{ url_for('register') }}" class="dropdown-item" >Register</a>
+                </div>
+            </div>
+
             <a class="px-lg-2" href="" role="button"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:20px;"></i></a>
-            <a class="px-lg-3" href="" role="button"><i class="fa fa-user" aria-hidden="true" style="font-size:25px;"> </i></a>
+            <a class="px-lg-3" id="profil" href="" role="button"><i class="fa fa-user" aria-hidden="true" style="font-size:25px;"> </i></a>
         </div>
     </nav>
     <!-- Navbar End -->
