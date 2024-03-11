@@ -77,6 +77,8 @@
 
 #profil{
     margin-right: 10px;
+    margin-left: 10px;
+
 }
 
 /*** Navbar ***/
@@ -151,6 +153,10 @@
         transition: .5s;
         opacity: 1;
     }
+}
+
+#navbarCollapse .dropdown:nth-child(3) .dropdown-menu{
+    min-width: 4rem;
 }
 
 

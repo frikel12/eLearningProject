@@ -59,17 +59,26 @@
                 <a href="{{ url_for('team') }}" class="nav-item nav-link">Our Team</a>
                 <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
             </div>
+
             <div class="nav-item dropdown">
                 <a href="#" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block nav-link dropdown-toggle" data-bs-toggle="dropdown">Join Now</a>
-                <div class="dropdown-menu fade-down m-0">
+                <div class="dropdown-menu fade-down m-0" style="min-width:130px;">
                     <a href="{{ url_for('login') }}" class="dropdown-item">Login</a>
                     <a href="{{ url_for('register') }}" class="dropdown-item" >Register</a>
                 </div>
             </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-user" aria-hidden="true" style="font-size:25px;"> </i></a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ url_for('login') }}" class="dropdown-item" style="font-size: 15px;padding: 8px 12px;">Account</a>
+                    <hr style="margin:0;">
+                    <a href="{{ url_for('register') }}" class="dropdown-item" style="font-size: 15px;padding: 8px 7px;">Sign Out</a>
+                </div>
+            </div>
 
-            <a class="px-lg-2" href="" role="button"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:20px;"></i></a>
-            <a class="px-lg-3" id="profil" href="" role="button"><i class="fa fa-user" aria-hidden="true" style="font-size:25px;"> </i></a>
+            <a class="px-lg-2" id="profil" href="" role="button"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:20px;"></i></a>
         </div>
+
     </nav>
     <!-- Navbar End -->
 
