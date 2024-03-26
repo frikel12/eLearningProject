@@ -70,13 +70,13 @@
             <div class="nav-item dropdown">
                 <a href="#" class="btn btn-primary py-4 px-lg-4 d-none d-lg-block nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-user" aria-hidden="true" style="font-size:25px;"> </i></a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="{{ url_for('login') }}" class="dropdown-item" style="font-size: 15px;padding: 8px 12px;">Account</a>
+                    <a href="{{ url_for('account') }}" class="dropdown-item" style="font-size: 15px;padding: 8px 12px;">Account</a>
                     <hr style="margin:0;">
                     <a href="{{ url_for('register') }}" class="dropdown-item" style="font-size: 15px;padding: 8px 7px;">Sign Out</a>
                 </div>
             </div>
 
-            <a class="px-lg-2" id="profil" href="" role="button"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:20px;"></i></a>
+            <a class="px-lg-2" id="profil" href="{{ url_for('favoris') }}" role="button"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:20px;"></i></a>
         </div>
 
     </nav>
@@ -95,7 +95,6 @@
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
                                 <h1 class="display-3 text-white animated slideInDown">The Best Online Learning Platform</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -111,7 +110,6 @@
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>

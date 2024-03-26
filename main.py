@@ -40,6 +40,11 @@ def account():
     return render_template('account.html')
 
 
+@app.route('/favoris')
+def favoris():
+    return render_template('favoris.html')
+
+
 db_config = {
     'host': 'localhost',
     'user': 'root',

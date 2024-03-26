@@ -1,0 +1,14 @@
+.supcourses{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.courses {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+

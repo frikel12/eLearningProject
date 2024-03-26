@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/favoris.css') }}">
+
+{% endblock %}
+
+{% block body %}
+<br><br>
+<h1 style="text-align:center;margin-bottom:20px;font-weight:bold;font-size:35px;">Liste des favoris</h1>
+
+<div class="supcourses">
+<div class="courses">
+
+  {% for i in range(10) %}
+
+    <div class="card bg-light border-info" style="width: 20rem; display: inline-block;margin : 0.1rem;">
+      <div class="card-body">
+        <a href=""><h5 class="card-title text-primary">Course Name</h5></a>
+        <i class="fa fa-heart" aria-hidden="true" style="font-size:20px; float: right;cursor:pointer;"></i>
+
+        <h6 class="card-subtitle mb-2 text-muted">source</h6>
+        <h6 class="card-subtitle mb-2 text-muted">categorie et sous categorie</h6>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">duration</th>
+              <th scope="col">level</th>
+              <th scope="col">lectures</th>
+            </tr>
+          </thead>
+        </table>
+
+      </div>
+    </div>
+  {% endfor %}
+</div>
+</div>
+  <br><br>
+
+  <br><hr>
+{% endblock %}
