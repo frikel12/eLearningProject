@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'index.html' %}
 
-</body>
-</html>
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/account.css') }}">
+
+{% endblock %}
+
+
+{% block body %}
+<div class="loginform ">
+    <h1 style="text-align:center;margin-bottom:20px;font-weight:bold;font-size:35px;">Modifier Votre Password</h1>
+    <form method="post" action="">
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" >Password actuel</label>
+            <input type="password"  class="form-control" name="password" />
+          </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" >Nouveau Password</label>
+            <input type="password"  class="form-control" name="password" />
+          </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" >Confirmer Password</label>
+            <input type="password"  class="form-control" name="password" />
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="submitbtn btn mb-4 rounded-0 p-2 px-3 " >Modifier</button>
+
+    </form>
+</div>
+
+{% endblock %}
+
+

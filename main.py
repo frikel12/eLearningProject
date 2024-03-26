@@ -35,6 +35,11 @@ def register():
     return render_template('register.html')
 
 
+@app.route('/account')
+def account():
+    return render_template('account.html')
+
+
 db_config = {
     'host': 'localhost',
     'user': 'root',
