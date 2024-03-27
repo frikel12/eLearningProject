@@ -45,6 +45,11 @@ def favoris():
     return render_template('favoris.html')
 
 
+@app.route('/courses')
+def courses():
+    return render_template('courses.html')
+
+
 db_config = {
     'host': 'localhost',
     'user': 'root',

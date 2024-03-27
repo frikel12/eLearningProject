@@ -1,0 +1,61 @@
+.allcontent{
+    display: flex;
+    justify-content:center;
+    gap: 0px 40px;
+}
+
+.searchbycategori{
+    padding: 0px 2%;
+    padding-top: 60px
+}
+
+.searchbycategori div{
+    margin-top: 12px;
+    padding-left: 0;
+}
+
+.searchbycategori div input{
+    width: 25px;
+    height: 25px;
+    vertical-align:middle;
+    accent-color: #06BBCC;
+}
+
+.searchbycategori div label{
+    padding-left: 10px;
+
+}
+
+.courses {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+.searchform{
+    width:40%;
+     margin-bottom: 1rem;
+}
+
+.searchform button{
+    color: #06BBCC;
+    border-color: #06BBCC;
+}
+
+.searchform button:hover{
+    color: #fff;
+    background-color: #06BBCC;
+    border-color: #06BBCC;
+}
+
+
+.page-link{
+    color: black;
+}
+
+
